@@ -1,6 +1,7 @@
-## Hi there, call me RC. 👋
+## "I learn by creating" 👋
 
-- 👯 I’m looking forward to collaborate in my first hackathon. For preparation, I am currently levelling up my github readme skills!
+- I am looking forward to my first hackathon.
+- I will learn more about github by creating a December themed project.
 
 <!--
 **rcmbcs/rcmbcs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
