@@ -7,8 +7,4 @@
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=plastic&logo=html5&logoColor=white) [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](#)
 ![Selenium](https://img.shields.io/badge/-selenium-%43B02A?style=plastic&logo=selenium&logoColor=white) ![Jasmine](https://img.shields.io/badge/-Jasmine-%238A4182?style=plastic&logo=Jasmine&logoColor=white)
 [![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#)
-# 📊 GitHub Stats:
-![](https://nirzak-streak-stats.vercel.app/?user=rcmbcs&theme=dark&hide_border=false)<br/>
 
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
