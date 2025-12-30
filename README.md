@@ -1,5 +1,5 @@
 #  "I learn by creating."
-### I am currently learning more about github by creating a project within a hackathon environment.
+### Recently sharpened my HTML, CSS and JavaScript skills through a fast‑paced hackathon, where I got hands‑on with collaboration, version control, and problem‑solving under pressure. I’m continuously learning, experimenting, and building projects that help me grow into a confident, industry‑ready developer with a special interest in software testing.
 
 
 # 💻 Tech Stack:
