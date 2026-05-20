@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QA Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Optional: simple reset -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #222;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Layout */
+    header {
+      background: #111827;
+      color: #f9fafb;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    nav a {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .btn-nav {
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #f9fafb;
+      font-size: 0.9rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 2rem 0 2.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .hero-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1rem;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary {
+      background: #2563eb;
+      color: #f9fafb;
+    }
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    /* Sections */
+    section {
+      padding: 2rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Featured Project */
+    .featured {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.5fr);
+      gap: 1.5rem;
+      align-items: stretch;
+    }
+    .featured-image {
+      background: #d1d5db;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4b5563;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    .featured-content h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+    .featured-list {
+      margin-bottom: 1.25rem;
+      padding-left: 1.1rem;
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .featured-list li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .project-card {
+      background: #ffffff;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      border: 1px solid #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-card p {
+      font-size: 0.9rem;
+      color: #6b7280;
+      margin-bottom: 0.75rem;
+    }
+    .project-card .btn {
+      align-self: flex-start;
+    }
+
+    /* Test documentation */
+    .doc-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .btn-outline {
+      border-radius: 999px;
+      border: 1px solid #9ca3af;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      background: #f9fafb;
+      color: #111827;
+    }
+
+    /* About */
+    .about-text {
+      max-width: 700px;
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 1.5rem 1.5rem 2rem;
+      margin-top: 1rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .socials {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    .socials a {
+      color: #e5e7eb;
+      opacity: 0.9;
+    }
+    .footer-copy {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .featured {
+        grid-template-columns: 1fr;
+      }
+      nav ul {
+        gap: 0.9rem;
+        font-size: 0.85rem;
+      }
+      .hero-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">QA Portfolio</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#test-docs">Test Documentation</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <h1 class="hero-title">QA Engineer Portfolio</h1>
+      <p class="hero-subtitle">Manual &nbsp;|&nbsp; Automation &nbsp;|&nbsp; Testing</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#" class="btn btn-secondary">Download Resume</a>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECT -->
+    <section id="featured">
+      <h2 class="section-title">Featured Project</h2>
+      <div class="featured">
+        <div class="featured-image">
+          Featured Project Image / Screenshot
+        </div>
+        <div class="featured-content">
+          <h3>Django E‑Commerce Link Testing</h3>
+          <ul class="featured-list">
+            <li>Homepage Link Integrity Testing (No 404s)</li>
+            <li>Test Cases &nbsp;|&nbsp; Bug Reports &nbsp;|&nbsp; Test Summary</li>
+          </ul>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">My QA Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div>
+            <h3>Project 1</h3>
+            <p>Short description of the project and what you tested or built.</p>
+          </div>
+          <a href="#" class="btn btn-secondary">View</a>
+        </article>
+        <article class="project-card">
+          <div>
+            <h3>Project 2</h3>
+            <p>Short description of the project and what you tested or built.</p>
+          </div>
+          <a href="#" class="btn btn-secondary">View</a>
+        </article>
+        <article class="project-card">
+          <div>
+            <h3>Project 3</h3>
+            <p>Short description of the project and what you tested or built.</p>
+          </div>
+          <a href="#" class="btn btn-secondary">View</a>
+        </article>
+        <article class="project-card">
+          <div>
+            <h3>Project 4</h3>
+            <p>Short description of the project and what you tested or built.</p>
+          </div>
+          <a href="#" class="btn btn-secondary">View</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- TEST DOCUMENTATION -->
+    <section id="test-docs">
+      <h2 class="section-title">Test Documentation</h2>
+      <div class="doc-buttons">
+        <button class="btn-outline">Test Plan</button>
+        <button class="btn-outline">Test Cases</button>
+        <button class="btn-outline">Bug Reports</button>
+        <button class="btn-outline">Summary Report</button>
+      </div>
+      <a href="#" class="btn btn-primary">View Documentation</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        Brief bio and skills. You can describe your background, your interest in QA, tools you use
+        (e.g. Django, Selenium, Postman, Git, GitHub Actions), and the types of testing you enjoy
+        (manual, automation, API, regression, exploratory).
+      </p>
+    </section>
+
+    <!-- CONTACT / FOOTER ANCHOR -->
+    <section id="contact"></section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="socials">
+        <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:youremail@example.com">Email</a>
+      </div>
+      <div class="footer-copy">
+        © Your Name – QA Engineer Portfolio
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
