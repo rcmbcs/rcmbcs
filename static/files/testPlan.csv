@@ -1,0 +1,17 @@
+﻿Section,Summary
+1. Test Plan ID,MTP‑ECOM‑V1.0
+2. Introduction,"Defines scope, objectives, and approach for testing the e‑commerce web app."
+3. Test Items,"Homepage, PLP, PDP, Cart, Checkout, Login, Order History."
+4. Features to Be Tested,"Functional flows, UI, validation, APIs, browser compatibility."
+5. Features Not Tested,"Load testing, penetration testing, payment gateway internals, mobile app."
+6. Test Objectives,"Verify requirements, detect defects, validate end‑to‑end flows."
+7. Test Approach,"System testing, regression, usability, compatibility, API testing."
+8. Entry Criteria,"Approved requirements, stable build, test data ready, environment available."
+9. Exit Criteria,"All high‑priority tests executed, no critical defects, ≥90% coverage."
+10. Deliverables,"Test plan, test cases, test data, defect reports, summary report."
+11. Testing Tasks,"Design tests, prepare data, execute, log defects, regression, reporting."
+12. Environment Needs,"Browsers (Chrome/Firefox/Safari/Edge), Windows/macOS, Jira, TestRail, Postman."
+13. Responsibilities,"Test Manager, QA Engineers, Developers, Product Owner."
+14. Schedule,"Planning (1–3 Jun), Design (4–10 Jun), Execution (11–25 Jun), Regression (26–30 Jun), UAT (1–5 Jul)."
+15. Risks,"Requirement changes, unstable environment, payment failures."
+16. Approvals,"Test Manager, QA Lead, Product Owner."

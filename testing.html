@@ -190,49 +190,149 @@
     <!-- PAGE HEADER -->
     <div class="page-header">
       <h1 class="page-title">Test Documentation</h1>
-      <p class="page-subtitle">Test Plans • Test Cases • Bug Reports • Summary Reports</p>
+      <p class="page-subtitle">Test Plans • Test Cases • Bug Reports</p>
     </div>
-
+    <a href="https://rcmbcs.github.io/rcmbcs/" target="_blank" class="featured-image">
+          <img src="images/featured.png" alt="Featured Project Screenshot" style="width:50%; border-radius:0.75rem;">
+    </a>
     <!-- TEST PLAN -->
     <section>
       <h2 class="section-title">Test Plan</h2>
       <p>A high‑level overview of the testing strategy, scope, objectives, resources, and timelines.</p>
-      <div class="doc-buttons">
-        <button class="btn-outline">Test Plan coming soon</button>
-      </div>
+      <p>Test plan snippet:</p>
+      <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+              <tr>
+                  <th>Section</th>
+                  <th>Summary</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1. Test Plan ID</td>
+                  <td>VER 1FY</td>
+              </tr>
+              <tr>
+                  <td>2. Introduction</td>
+                  <td>Functional testing of a typical e-commerce website</td>
+              </tr>
+              <tr>
+                  <td>3. Test Items</td>
+                  <td>Homepage, Order Online, Recipes, Find A Store, Work With Us.</td>
+              </tr>
+              <tr>
+                  <td>4. Features to Be Tested</td>
+                  <td>Functional flows, UI, browser compatibility.</td>
+              </tr>
+              <tr>
+                  <td>5. Features Not Tested</td>
+                  <td>penetration testing, payment gateway internals</td>
+              </tr>
+              <tr>
+                  <td>6. Test Objectives</td>
+                  <td>Verify requirements, detect defects, validate end‑to‑end flows.</td>
+              </tr>
+              <tr>
+                  <td>7. Test Approach</td>
+                  <td>Automated and manual testing</td>
+              </tr>
+              <tr>
+                  <td>8. Entry Criteria</td>
+                  <td>Approved requirements, stable build, test data ready, environment available.</td>
+              </tr>
+              <tr>
+                  <td>9. Exit Criteria</td>
+                  <td>All high‑priority tests executed, no critical defects, ≥90% coverage.</td>
+              </tr>
+              <tr>
+                  <td>10. Deliverables</td>
+                  <td>Test plan, test cases, test data, defect reports, summary report.</td>
+              </tr>
+           
+            
+          </tbody>
+      </table>
     </section>
 
     <!-- TEST CASES -->
     <section>
         <h2 class="section-title">Test Case</h2>
-        <p>Example of an automated functional test case that I created using Python and Selenium.</p>
-
+        <h3>Verify if all page links load.</h3>
+        <p> I created a Python-based Selenium script to automatically verify if all page links load.</p>
+        <p> Results snippet:</p>
         <img src="images/automatedTesting.png" 
             alt="Example Test Cases Screenshot" 
             class="doc-image">
 
         <div class="doc-buttons">
-            <button class="btn-outline">Test Cases coming soon</button>
+            <button class="btn-outline">More Test Cases coming soon</button>
         </div>
     </section>
 
 
-    <!-- BUG REPORTS -->
+    <!-- BUG REPORT -->
     <section>
-      <h2 class="section-title">Bug Reports</h2>
+      <h2 class="section-title">Bug Report</h2>
       <p>Documented defects with severity, priority, reproduction steps, and expected vs actual results.</p>
-      <div class="doc-buttons">
-        <button class="btn-outline">Bug Reports coming soon</button>
-      </div>
-    </section>
+      <table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bug ID</td>
+            <td>WFM‑WEB‑0123</td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td>Code of Business Conduct PDF</td>
+        </tr>
+        <tr>
+            <td>Environment</td>
+            <td>
+                Device: Desktop<br>
+                Browser: Chrome 124<br>
+                URL: https://www.wholefoodsmarket.co.uk<br>
+                OS: Windows 11
+            </td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>
+                Code of Business Conduct pdf not linked
+            </td>
+        </tr>
+        <tr>
+            <td>Steps to Reproduce</td>
+            <td>
+                1. Navigate to the https://www.wholefoodsmarket.co.uk/modern-slavery-act<br>
+                2. Click Code of Business Conduct<br>
 
-    <!-- SUMMARY REPORT -->
-    <section>
-      <h2 class="section-title">Summary Report</h2>
-      <p>A final overview of testing outcomes, defect metrics, and release readiness.</p>
-      <div class="doc-buttons">
-        <button class="btn-outline">Summary Report coming soon</button>
-      </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Expected Result</td>
+            <td>Linked to Business Code of Conduct pdf</td>
+        </tr>
+        <tr>
+            <td>Actual Result</td>
+            <td>linked to wrong pdf document, linked to Supplier Code of Conduct pdf instead</td>
+        </tr>
+        <tr>
+            <td>Severity</td>
+            <td>Low</td>
+        </tr>
+        <tr>
+            <td>Priority</td>
+            <td>low</td>
+        </tr>
+        
+    </tbody>
+</table>
+
     </section>
 
   </main>
