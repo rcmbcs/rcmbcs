@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test Documentation – IT Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Same CSS as homepage -->
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #F3F4F6;
+      color: #111827;
+      line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAVBAR */
+    header {
+      background: #1E293B;
+      color: #f9fafb;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    nav a {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .btn-nav {
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #f9fafb;
+      font-size: 0.9rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    /* Page Title */
+    .page-header {
+      padding: 2rem 0 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .page-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .page-subtitle {
+      font-size: 1rem;
+      color: #4b5563;
+    }
+
+    /* Sections */
+    section {
+      padding: 2rem 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary {
+      background: #4b5563;
+      color: #f9fafb;
+    }
+    .btn-outline {
+      border-radius: 999px;
+      border: 1px solid #9ca3af;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      background: #f9fafb;
+      color: #111827;
+    }
+
+    .doc-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 1.5rem 1.5rem 2rem;
+      margin-top: 1rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .socials {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+    .socials a {
+      color: #e5e7eb;
+      opacity: 0.9;
+    }
+    .footer-copy {
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 0.9rem;
+        font-size: 0.85rem;
+      }
+      .page-title {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR (same as homepage) -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">IT Portfolio</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="testing.html">Test Documentation</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1 class="page-title">Test Documentation</h1>
+      <p class="page-subtitle">Test Plans • Test Cases • Bug Reports • Summary Reports</p>
+    </div>
+
+    <!-- TEST PLAN -->
+    <section>
+      <h2 class="section-title">Test Plan</h2>
+      <p>A high‑level overview of the testing strategy, scope, objectives, resources, and timelines.</p>
+      <div class="doc-buttons">
+        <button class="btn-outline">Test Plan coming soon</button>
+      </div>
+    </section>
+
+    <!-- TEST CASES -->
+    <section>
+      <h2 class="section-title">Test Cases</h2>
+      <p>Structured test cases covering functional, UI, regression, and negative testing.</p>
+      <div class="doc-buttons">
+        <button class="btn-outline">Test Cases coming soon</button>
+      </div>
+    </section>
+
+    <!-- BUG REPORTS -->
+    <section>
+      <h2 class="section-title">Bug Reports</h2>
+      <p>Documented defects with severity, priority, reproduction steps, and expected vs actual results.</p>
+      <div class="doc-buttons">
+        <button class="btn-outline">Bug Reports coming soon</button>
+      </div>
+    </section>
+
+    <!-- SUMMARY REPORT -->
+    <section>
+      <h2 class="section-title">Summary Report</h2>
+      <p>A final overview of testing outcomes, defect metrics, and release readiness.</p>
+      <div class="doc-buttons">
+        <button class="btn-outline">Summary Report coming soon</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="socials">
+        <a href="https://github.com/rcmbcs" target="_blank">GitHub</a>
+      </div>
+      <div class="footer-copy">
+        © RCMBCS – My Portfolio
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
